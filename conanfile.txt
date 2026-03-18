@@ -1,0 +1,3 @@
+[requires]
+fmt/master
+googletest/v1.17.0
