@@ -29,9 +29,8 @@ foreach(test_src ${test_srcs})
         fmt::fmt-module
         GTest::GTest
         GTest::Main
-        neograaf
+        graaf
         graaf_utils
     )
     gtest_discover_tests(${test_name})
 endforeach()
-gtest_discover_tests(graph_test) # ← registers tests with CTest

@@ -5,7 +5,7 @@ file(
     "${CMAKE_CURRENT_SOURCE_DIR}/*.cpp"
 )
 target_sources(graaf PUBLIC FILE_SET CXX_MODULES FILES ${graaf_srcs})
-
+include(GNUInstallDirs)
 install(
     TARGETS graaf
     ARCHIVE DESTINATION ${CMAKE_INSTALL_LIBDIR}
