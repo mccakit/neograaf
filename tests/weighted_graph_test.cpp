@@ -1,7 +1,7 @@
 #include <gtest/gtest.h>
 import std;
 import graaf;
-import graaf.utils.fixtures;
+import graaf.utils;
 namespace graaf {
 
 template <typename T>

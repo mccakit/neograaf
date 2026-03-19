@@ -4,7 +4,7 @@ module;
 #include <gtest/gtest.h>
 #include <utility>
 
-export module graaf.utils.fixtures;
+export module graaf.utils:fixtures;
 
 // Import the modularized library components
 import graaf;

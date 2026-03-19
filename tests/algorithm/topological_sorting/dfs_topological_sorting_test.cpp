@@ -1,7 +1,7 @@
 #include <gtest/gtest.h>
 
 import graaf;
-import graaf.utils.fixtures;
+import graaf.utils;
 
 namespace graaf::algorithm {
 namespace {

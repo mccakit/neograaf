@@ -1,6 +1,6 @@
 #include <gtest/gtest.h>
 import graaf;
-import graaf.utils.fixtures;
+import graaf.utils;
 import fmt;
 /**
  * Tests which test the common functionality of the graph
