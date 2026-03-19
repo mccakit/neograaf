@@ -29,7 +29,7 @@ foreach(test_src ${test_srcs})
         fmt::fmt-module
         GTest::GTest
         GTest::Main
-        graaf
+        neograaf
         graaf_utils
     )
     gtest_discover_tests(${test_name})
