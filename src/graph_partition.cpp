@@ -120,8 +120,9 @@ class graph {
     return get_edge(lhs, rhs);
   }
 
-  [[nodiscard]] vertices_t get_neighbors(vertex_id_t vertex_id) const {
-    if (!adjacency_list_.contains(vertex_id)) return {};
+  [[nodiscard]] const vertices_t& get_neighbors(vertex_id_t vertex_id) const {
+    static const vertices_t empty{};
+    if (!adjacency_list_.contains(vertex_id)) return empty;
     return adjacency_list_.at(vertex_id);
   }
 
