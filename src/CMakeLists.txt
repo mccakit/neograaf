@@ -11,7 +11,7 @@ install(
     ARCHIVE DESTINATION ${CMAKE_INSTALL_LIBDIR}
     CXX_MODULES_BMI DESTINATION ${CMAKE_INSTALL_LIBDIR}/cxx/bmi
 )
-configure_file(${CMAKE_CURRENT_SOURCE_DIR}/packaging/graaf.pc.in graaf.pc @ONLY)
+configure_file(${CMAKE_SOURCE_DIR}/packaging/graaf.pc.in graaf.pc @ONLY)
 install(
     FILES ${CMAKE_CURRENT_BINARY_DIR}/graaf.pc
     DESTINATION ${CMAKE_INSTALL_LIBDIR}/pkgconfig
