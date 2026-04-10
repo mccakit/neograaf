@@ -24,7 +24,7 @@ using edge_id_t = std::pair<vertex_id_t, vertex_id_t>;
  * Note: While this is used internally for edge_id_hash,
  * we export it as it's a useful general utility for graph types.
  */
-template <class T> inline void hash_combine(std::size_t &seed, const T &v) {
+template <class T> void hash_combine(std::size_t &seed, const T &v) {
   std::hash<T> hasher;
   seed ^= hasher(v) + 0x9e3779b9 + (seed << 6) + (seed >> 2);
 }
